@@ -36,8 +36,19 @@ class HelloTemplate(TemplateView):
 
 
 def articles(request):
+	language = 'en-gb'
+	session_language = 'en-gb'
+
+	if 'lang' in request.COOKIES:
+		language = request.COOKIES['lang']
+
+	if 'lang' in request.session:
+		session_language = request.session['lang']
+
 	context_obj = {
-		'articles': Article.objects.all()
+		'articles': Article.objects.all(),
+		'language': language,
+		'session_language': session_language
 	}
 	return render_to_response('articles.html', context_obj)
 
@@ -46,3 +57,13 @@ def article(request, article_id=1):
 		'article': Article.objects.get(id=article_id)
 	}
 	return render_to_response('article.html', context_obj)
+
+def language(request, language='en-gb'):
+	response = HttpResponse('setting language to : %s' % language)
+	response.set_cookie('lang', language)
+	return response
+
+def session_language(request, session_language='en-gb'):
+	response = HttpResponse('setting Session language to : %s' % session_language)
+	request.session['lang'] = session_language
+	return response
