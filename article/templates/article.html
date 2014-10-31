@@ -4,4 +4,9 @@
 {% block content %}
 <h1>{{ article.title }}</h1>
 <p>{{ article.body }}</p>
+	{% if article.thumbnail %}
+	<p><img src="/static/uploaded_files/{{ article.thumbnail }}" width="200px" /></p>
+	{% endif %}
+<p>{{ article.likes }} people liked this!</p>
+<p><a href="/articles/like/{{ article.id }}">Like</a></p>
 {% endblock %}

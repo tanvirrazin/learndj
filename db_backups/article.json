@@ -1,0 +1,42 @@
+[
+{
+    "pk": 1, 
+    "model": "article.article", 
+    "fields": {
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget turpis at tortor scelerisque sodales non ut enim. In at gravida purus. Suspendisse vitae sagittis nisl. Vivamus volutpat interdum est vitae imperdiet. Nulla facilisi. Duis eget ullamcorper lacus. Morbi urna lacus, pretium aliquet aliquam nec, pretium non dui. Nunc egestas, tortor vitae condimentum vulputate, augue lacus posuere urna, at lobortis est eros sit amet nibh. Vestibulum in risus in lorem ullamcorper lobortis.", 
+        "pub_date": "2014-10-24T13:14:52Z", 
+        "likes": 1, 
+        "title": "First article"
+    }
+},
+{
+    "pk": 2, 
+    "model": "article.article", 
+    "fields": {
+        "body": "Phasellus congue luctus ornare. Ut nec faucibus lacus. Nunc at magna porta, luctus risus at, finibus ex. Nulla rutrum finibus libero, porta aliquam diam. Sed posuere velit ut semper vehicula. Nullam vehicula, ante ac interdum lacinia, eros justo viverra mauris, ac tincidunt turpis magna id leo. Nunc aliquet, nunc sit amet tempus faucibus, ipsum odio laoreet lacus, vel pretium nisl tortor eget ex. Fusce quis libero non ligula hendrerit dapibus. Aenean tempus magna id ex commodo, eget dictum nisi euismod. Suspendisse potenti.", 
+        "pub_date": "2014-10-24T13:17:11Z", 
+        "likes": 1, 
+        "title": "Second article"
+    }
+},
+{
+    "pk": 3, 
+    "model": "article.article", 
+    "fields": {
+        "body": "Nunc molestie magna vitae sapien ultrices scelerisque at et purus. Nulla vitae placerat neque. Curabitur venenatis vel nisl in blandit. Sed rutrum pretium dui. Etiam convallis eros ligula. Morbi massa odio, euismod in consequat molestie, facilisis vel ipsum. Nullam ut ullamcorper velit, ut porta nisi. Nam ut mi aliquam, iaculis tortor varius, suscipit neque.", 
+        "pub_date": "2014-10-24T13:17:50Z", 
+        "likes": 0, 
+        "title": "Third article"
+    }
+},
+{
+    "pk": 4, 
+    "model": "article.article", 
+    "fields": {
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget turpis at tortor scelerisque sodales non ut enim. In at gravida purus. Suspendisse vitae sagittis nisl. Vivamus volutpat interdum est vitae imperdiet. Nulla facilisi. Duis eget ullamcorper lacus. Morbi urna lacus, pretium aliquet aliquam nec, pretium non dui. Nunc egestas, tortor vitae condimentum vulputate, augue lacus posuere urna, at lobortis est eros sit amet nibh. Vestibulum in risus in lorem ullamcorper lobortis.", 
+        "pub_date": "2014-10-31T14:18:19Z", 
+        "likes": 0, 
+        "title": "Forth Article"
+    }
+}
+]

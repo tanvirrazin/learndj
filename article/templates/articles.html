@@ -1,6 +1,16 @@
 {% extends "base.html" %}
 
 
+{% block sidebar %}
+
+<ul>
+	<li><a href="/articles/all">Articles</a></li>
+	<li><a href="/articles/create">Create</a></li>
+	<li><a href="/admin/">Admin</a></li>
+</ul>
+
+{% endblock %}
+
 {% block content %}
 
 <h2>Language is : {{ language }}</h2>
@@ -10,6 +20,7 @@
 <div>
 	<h2><a href="/articles/get/{{ article.id }}">{{ article.title }}</a></h2>
 	<p>{{ article.body | lower | truncatewords:"15" }}</p>
+	<p>{{ article.likes }} people liked this article</p>
 </div>
 {% endfor %}
 
